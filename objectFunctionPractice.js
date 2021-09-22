@@ -9,13 +9,12 @@ const students = [{
     age: 32, 
     gender: 'male'
 }, {
-    firstName: 'Khrystofer',
-    lastName: 'Gil',
-    age: 30, 
-    gender: 'male'
+    firstName: 'Diana',
+    lastName: 'Tineo',
+    age: 32, 
+    gender: 'female'
 }, {
-    firstName: 'Gabby',
-    lastName: 'Taylor',
+    lastName: 'Anty',
     age: 22, 
     gender: 'female'
 }, {
