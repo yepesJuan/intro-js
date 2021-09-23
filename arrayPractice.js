@@ -111,6 +111,28 @@ function fizzBuzz(num) {
   }
 }
 const n = 100;
-console.time("fizzbuzz")
 fizzBuzz(n);
-console.timeEnd("fizzbuzz")
+
+
+
+
+
+/// half pyramid challenge
+// output  
+
+/* #
+   ##
+   ###
+   ####
+   #####
+ */
+
+   // function outputPyramid(rows,character)
+
+   function outputPyramid(rows, character){
+     for( let i = 0; i < rows ; i++){
+       console.log( character)
+       character = character + "#"
+     }
+   }
+   outputPyramid(5,"#")
