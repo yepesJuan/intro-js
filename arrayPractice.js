@@ -119,20 +119,15 @@ fizzBuzz(n);
 
 /// half pyramid challenge
 // output  
+// function outputPyramid(rows,character)
 
-/* #
-   ##
-   ###
-   ####
-   #####
- */
-
-   // function outputPyramid(rows,character)
-
-   function outputPyramid(rows, character){
+   function outputPyramid(rows,character){
+     let row = character
      for( let i = 0; i < rows ; i++){
-       console.log( character)
-       character = character + "#"
+       console.log(row)
+       row += character
      }
    }
-   outputPyramid(5,"#")
+   outputPyramid(5,"#") 
+
+   
