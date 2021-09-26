@@ -1,45 +1,36 @@
-const fruits = ['kiwi', 'lime', 'apple', 'banana','orange','grapes']
-
-function getNextFruit(){
-    const nextFruit = fruits.shift()
-    console.log('You get a', nextFruit)
-    console.log('There are', fruits.length, 'fruits left')
-}
-const numLoops = fruits.length
-for (let i = 0; i < numLoops; i++){
-    getNextFruit()
-}
+const fruits = ["kiwi", "lime", "apple"]
 
 
-//
+/* push adds item to the end of array, returns length */
+fruits.push("strawberry");
+console.log(fruits)
 
-let stack = [] //no pancakes yet 
-function cookPancakes() {
-    for( let p = 0; p < 16; p++) {
-        stack.push('pancakes' + p)
-    }
-}
+/* pop removes & retuns last item of array */ 
+fruits.pop("strawberry");
+console.log(fruits);
 
-function servePancakes(num){
-    for( let i = 0 ; i < num ; i++)
-    console.log(stack.pop())
-}
+/* shift removes & retuns first item of array */
+let myFruits = fruits.shift();
+console.log(myFruits);
+console.log(fruits);
 
-cookPancakes()
+/* unshift adds item to beginning of array, returns length */
+fruits.unshift("strawberry");
+console.log(fruits);
 
-const kids = [
-    {name: 'Benji', age: 2, pancakes: 2},
-    {name: 'Noah', age: 17, pancakes: 5},
-    {name: 'David', age: 6, pancakes: 2},
-    {name: 'Daniel', age: 3, pancakes: 4},
+/*spread operator ... */
+let sports = ["soccer", "tennis", "basketball"];
+console.log(["football", ...sports, "golf"]);
 
-]
+let arr = [1, 2, 3, 4];
+console.log(arr)
+arr.splice(1, 0, 'lol'); // from a postion, remove how many items, and 3rd adds 
+console.log(arr)
 
-for(let kid of kids) {
-    console.log(kid.name + ' gets ' )
-    servePancakes(kid.pancakes)
-}
-
-//console.log(stack)
+//indexOf or loop through array and set arr[i] === target
+//splice
+//concat
+// split string to array
+// join  arrat to string
 
 

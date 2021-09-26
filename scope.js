@@ -8,7 +8,7 @@ function badFunction() {
 }
 
 console.log(globalVar)
-// console.log(functionVar)
+//console.log(functionVar)
 
 badFunction()
 console.log(globalVar)
