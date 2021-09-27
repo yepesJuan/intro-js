@@ -5,11 +5,11 @@ const awesome = true;
 console.log("Hello", firstName);
 
 if (age >= 18) {
-  console.log("You're an adult")
-} else if (age <= 17 ) {
-  console.log("You're under age")
+  console.log("You're an adult");
+} else if (age <= 17) {
+  console.log("You're under age");
 } else {
-  console.log("No age available")
+  console.log("No age available");
 }
 
 //iternary (condition) ? _if_ : _else_
@@ -20,10 +20,12 @@ console.log(message);
 let hour = 12;
 let message = hour < 11 ? "Good morning" : "Good afternnon!";
 
+// switch
+
 let animal = "duck";
 switch (animal) {
   case "dog":
-  case "wolf"
+  case "wolf":
     console.log("woof");
     break;
   case "duck":
