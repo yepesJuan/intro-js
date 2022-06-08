@@ -1,5 +1,5 @@
 //for : defined index, run action a specific # of times
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 10; i++) {
   console.log("This is for loop #", i);
 }
 console.log("\n");
